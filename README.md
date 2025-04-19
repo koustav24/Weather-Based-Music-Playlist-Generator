@@ -2,7 +2,6 @@
 
 This application automatically updates a Spotify playlist with Hindi songs that match the current weather in your city. It runs on a schedule and continuously updates your playlist with mood-appropriate music.
 
-![Playlist Generator Demo](https://via.placeholder.com/800x400?text=Hindi+Music+Playlist+Generator)
 
 ## ✨ Features
 
