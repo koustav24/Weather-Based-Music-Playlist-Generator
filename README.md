@@ -1,4 +1,4 @@
-# 🎶 Weather-Based Hindi Music Playlist Generator 🇮🇳
+# 🎶 Weather-Based Music Playlist Generator ( Hindi )
 
 > **Automatically curate your Spotify playlist with Hindi songs that match your city’s weather!**
 
