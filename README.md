@@ -1,90 +1,69 @@
-# Weather-Based Hindi Music Playlist Generator
+Weather-Based Music Playlist Generator 🎵🌦️
+This repository hosts a Python-based application that automatically updates a Spotify playlist with Hindi songs based on the current weather in your city. It runs on a schedule to keep your playlist fresh and mood-appropriate. 🎶
 
-This application automatically updates a Spotify playlist with Hindi songs that match the current weather in your city. It runs on a schedule and continuously updates your playlist with mood-appropriate music.
+🌟 Features
+🎶 Mood-appropriate music: Matches the weather with the perfect playlist.
+🌦️ Weather integration: Fetches live weather updates for accuracy.
+🔄 Automatic updates: Runs on a schedule to refresh the playlist.
+🌍 Localized experience: Tailored for Hindi music enthusiasts.
+🚀 Technologies Used
+Python: Backend logic and API integration.
+Spotify API: Manage and update playlists dynamically.
+Weather API: Fetch real-time weather data.
+🛠️ Installation & Setup
+Follow these steps to get started with the Weather-Based Music Playlist Generator:
 
-
-## ✨ Features
-
-- 🌤️ Fetches real-time weather data for your location
-- 🎵 Selects Hindi/Bollywood songs based on weather mood
-- 🎧 Automatically updates a Spotify playlist
-- ⏱️ Runs on a schedule (configurable update interval)
-- 📋 Updates playlist name and description with current weather information
-
-## 📋 Requirements
-
-- Python 3.7+
-- Spotify account
-- Spotify Developer application credentials
-- OpenWeatherMap API key
-
-## 🚀 Installation
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/spotify_playlist_generator.git
-cd spotify_playlist_generator
-```
-
-### 2. Create a Virtual Environment
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-### 3. Install Dependencies
-
-```bash
+Clone this repository:
+bash
+git clone https://github.com/koustav24/Weather-Based-Music-Playlist-Generator.git
+Navigate into the project directory:
+bash
+cd Weather-Based-Music-Playlist-Generator
+Install the required Python packages:
+bash
 pip install -r requirements.txt
-```
+Configure your .env file with the necessary API keys (see the next section for details).
+Run the application:
+bash
+python main.py
+🔑 Configuring the .env File
+The application requires API keys for Spotify and the weather service to function. Create a .env file in the root directory of the project and add the following values:
 
-### 4. Set Up Environment Variables
-
-Create a `.env` file in the root directory and configure it as shown in the template below.
-
----
-
-## 📄 `.env` File Template
-
-```plaintext
-# Spotify API Credentials
+plaintext
 SPOTIFY_CLIENT_ID=your_spotify_client_id
 SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+SPOTIFY_REFRESH_TOKEN=your_spotify_refresh_token
+WEATHER_API_KEY=your_weather_api_key
+CITY=your_city_name
+Explanation of the Variables:
+SPOTIFY_CLIENT_ID: Your Spotify API client ID (available in your Spotify developer dashboard).
+SPOTIFY_CLIENT_SECRET: Your Spotify API client secret (available in your Spotify developer dashboard).
+SPOTIFY_REFRESH_TOKEN: A refresh token to manage authentication for updating playlists.
+WEATHER_API_KEY: Your API key for the weather service (e.g., OpenWeatherMap API key).
+CITY: The name of the city for which you want to fetch weather updates.
+Ensure that your .env file is correctly formatted and securely stored. Never share your API keys publicly.
 
-# OpenWeatherMap API Key
-OPENWEATHER_API_KEY=your_openweather_api_key
+🎯 How It Works
+The application retrieves the current weather conditions for your city using a weather API.
+It selects songs from a pre-curated library that match the weather's mood.
+The selected songs are added to your Spotify playlist.
+This process runs automatically on a schedule, ensuring your playlist stays updated.
+🌐 API Integration
+This application uses the following APIs:
 
-# App Configuration
-REDIRECT_URI=http://localhost:8888/callback
-```
+Spotify API: For playlist management.
+Weather API: To fetch real-time weather updates.
+🤝 Contribution
+We welcome contributions from the community! To contribute:
 
-> ⚠️ **Important**: Never share your `.env` file or API credentials publicly.
+Fork the repository.
+Create a new branch for your feature/bugfix.
+Submit a pull request with a detailed description of your changes.
+📜 License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
----
+📧 Contact
+For any queries or feedback, feel free to reach out:
 
-## 🏃‍♂️ Running the App
-
-1. **Start the Application**:
-    ```bash
-    python app.py
-    ```
-
-2. Open your browser and navigate to the provided URL to interact with the app.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-Happy playlist generating! 🎵
+GitHub: koustav24
+Email: your-koustavkarmakar2004@gmail.com
