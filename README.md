@@ -4,7 +4,6 @@
 
 ---
 
-![Playlist Generator Demo](https://via.placeholder.com/800x400?text=Hindi+Music+Playlist+Generator)
 
 This project updates your Spotify playlist with Bollywood/Hindi songs that fit the current weather in your city. Set it up once, and enjoy a fresh, mood-matching playlist every day!
 
